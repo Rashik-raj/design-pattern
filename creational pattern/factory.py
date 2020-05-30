@@ -1,11 +1,11 @@
-class Dog():
+class Dog:
     def __init__(self,name):
         self.name = name
 
     def speak(self):
         return "woof!!!"
 
-class Cat():
+class Cat:
     def __init__(self,name):
         self.name = name
 
@@ -13,6 +13,7 @@ class Cat():
         return "meow!!!"
 
 def get_pet(pet='dog'):
+    """ factory method """
     pets = dict(dog=Dog('tucker'),cat=Cat('simba'))
     return pets[pet]
 
